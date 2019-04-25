@@ -8,7 +8,7 @@ export default class home extends Component {
     return (
       <div>
         <Header name="Home" />
-        <Jumbo title="Go-Manger" judul="Buy Now" />
+        <Jumbo title="Go-Manger"/>
       </div>
     )
   }

@@ -9,7 +9,7 @@ const Jumbo = props => {
       <Jumbotron>
         <h1 className="display-3">{props.title}</h1>
         <hr className="my-2" />
-          <Button tag={Link} to="/dashboard" color="primary">Buy Now</Button>
+          <Button tag={Link} to="/dashboard" color="success">Buy Now</Button>
       </Jumbotron>
     </div>
     );

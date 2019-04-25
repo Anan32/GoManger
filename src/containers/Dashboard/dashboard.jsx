@@ -3,6 +3,7 @@ import Header from'../../Components/header';
 import Counter from'../../Components/counter';
 import { Container, Row, Col } from 'reactstrap';
 import { Jumbotron, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 
 
@@ -57,12 +58,14 @@ class Dashboard extends Component {
     this.setState({
       total: this.state.total + harga
     });
+    sessionStorage.total = this.state.total + harga;
   };
 
   kurangtotalHarga= harga =>{
     this.setState({
       total: this.state.total - harga
     });
+    sessionStorage.total = this.state.total + harga;
   };
 
   render() {
@@ -87,6 +90,7 @@ class Dashboard extends Component {
         <ul type="square">
           <li>{this.state.total}</li>
         </ul>
+        <Button tag={Link} to="/payment" color="warning">Check Out</Button>
       </Jumbotron>
       </div>
     );
