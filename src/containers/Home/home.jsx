@@ -7,7 +7,7 @@ export default class home extends Component {
   render() {
     return (
       <div>
-        <Header name="Home" />
+        <Header name="GO-MANGER" />
         <Jumbo title="Go-Manger"/>
       </div>
     )

@@ -7,7 +7,7 @@ export default class Header extends Component {
         return (
     <div>
         <Navbar style={{backgroundColor: "orange"}} color="faded" light>
-          <NavbarBrand href="/" className="mr-auto">GO-Manger</NavbarBrand>    
+          <NavbarBrand href="/" className="mr-auto">GO-MANGER</NavbarBrand>    
         </Navbar>
     </div>
         );
